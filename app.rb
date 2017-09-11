@@ -6,13 +6,15 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @name = params[:name]
-    @coach = params[:coach]
-    @pg = params[:pg]
-    @sg = params[:sg]
-    @pf = params[:pf]
-    @sf = params[:sf]
-    @c = params[:c]
+    @team_info = params
+    #   
+    # @name = params[:name]
+    # @coach = params[:coach]
+    # @pg = params[:pg]
+    # @sg = params[:sg]
+    # @pf = params[:pf]
+    # @sf = params[:sf]
+    # @c = params[:c]
   end
 
   # get '/team' do
