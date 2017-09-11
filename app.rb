@@ -6,7 +6,10 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @team_info = params
+    @team_info = {}
+    params.each do |k, v|
+      @team_info[k] = v
+    end
     #
     # @name = params[:name]
     # @coach = params[:coach]
